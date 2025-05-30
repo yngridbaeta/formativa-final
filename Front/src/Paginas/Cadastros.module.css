@@ -1,0 +1,105 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    background: linear-gradient(to bottom, #f5f7fa, #e0efff);
+    padding: 20px;
+}
+
+.formulario {
+    background-color: #ffffff;
+    padding: 40px 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 28px;
+    color: #4a6d8c;
+    font-family: 'Georgia', serif;
+}
+
+.input {
+    padding: 12px 16px;
+    border: 1px solid #d4e1e8;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.input:focus {
+    border-color: #4a6d8c;
+}
+
+.divBotao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao {
+    padding: 12px;
+    background-color: #4a6d8c;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 200px;
+}
+
+.botao:hover {
+    background-color: #395875;
+}
+.botoesPeriodo {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.botaoPeriodo {
+    padding: 12px 24px;
+    background-color: #d1d1d1; /* Cor cinza */
+    color: #333; /* Cor do texto */
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.1s ease;
+}
+
+.botaoPeriodo:hover {
+    background-color: #b0b0b0; /* Cor cinza mais escuro no hover */
+    transform: translateY(-1px); /* Leve efeito de "elevação" */
+}
+
+.botaoPeriodo:focus{
+    background-color: #4a6d8c; 
+    color: white;
+}
+
+.ativo {
+    background-color: #4a6d8c; /* Cor de fundo quando selecionado */
+    color: white;
+}
+
+.botaoIndisponivel {
+    background-color: #d9534f; /* Cor vermelha para indicar que está indisponível */
+    cursor: not-allowed;
+}
+
+.botao:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+

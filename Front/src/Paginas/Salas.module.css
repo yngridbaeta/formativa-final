@@ -1,0 +1,149 @@
+/* Container principal */
+.container {
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background: linear-gradient(to top, #f5f7fa, #e0efff); /* Gradiente suave azul */
+  padding: 40px 20px;
+}
+  
+/* Estilo do título */
+.titulo {
+  font-size: 24px;
+  color: #4a6d8c;
+  font-family: 'Georgia', serif;
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Container da tabela */
+.tableContainer {
+  width: 80%;
+  max-width: 900px;
+  margin-top: 5px;
+  overflow-x: auto;
+}
+
+/* Estilos da tabela */
+.tabela {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.tabela th, .tabela td {
+  padding: 12px 20px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.lixeira{
+  margin-left: 15px;
+}
+
+.editar{
+  margin-left: 10px;
+}
+
+.tabela th {
+  background-color: #4a6d8c;
+  color: white;
+}
+
+.tabela tr:hover {
+  background-color: #f4f4f4;
+}
+
+.tabela td img {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  transition: opacity 0.3s ease;
+}
+
+.tabela td img:hover {
+  opacity: 0.7;
+}
+
+.botaoCadastro {
+  background-color: #4a6d8c;
+  color: white;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 6px;
+  margin: 0;
+  line-height: 1;
+}
+
+
+.botaoCadastro:hover {
+  background-color: #2e4765;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  width: 300px;
+}
+
+.botaoContainer{
+  display: flex;
+  justify-Content: flex-end;
+  width: 80%;
+  max-width: 900px;
+  margin-bottom: 10px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+button {
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.cancelButton {
+  background: lightgray;
+  border: none;
+}
+
+.confirmButton {
+  background: red;
+  color: white;
+  border: none;
+}
+
+.avisoNenhuma {
+  text-align: center;
+  color: #666;
+  font-style: italic;
+  margin-top: 20px;
+}
+
